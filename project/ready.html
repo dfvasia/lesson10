@@ -3,8 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        table {
+            width: 400px; /* Ширина таблицы */
+            /*border: 1px solid green; !* Рамка вокруг таблицы *!*/
+        }
+        td {
+            text-align: left; /* Выравниваем текст по центру ячейки */
+        }
+        th {
+            text-align: left; /* Выравниваем текст по центру ячейки */
+        }
+        td.rightcol { /* Правая ячейка */
+            text-align: right; /* Выравнивание по правому краю */
+        }
+    </style>
 </head>
 <body>
-
+<h1>
+    <strong>Ваш заказ готовится!</strong>
+</h1>
+<table>
+    <tr>
+        <td>21.10</td>
+        <td>21.10</td>
+        <td>21.10</td>
+    </tr>
+    <tr>
+        <th>Заказан</th>
+        <th>Выезжает</th>
+        <th>У вас</th>
+    </tr>
+</table>
+<hr>
+<table>
+    <tr>
+        <td>Роллы "М"</td>
+        <td class="rightcol"><strong>330 Р</strong></td>
+    </tr>
+    <tr>
+        <td>Пицца с ананасом</td>
+        <td class="rightcol"><strong>504 Р</strong></td>
+    </tr>
+    <tr>
+        <td>Лапша ушастая</td>
+        <td class="rightcol"><strong>470 Р</strong></td>
+    </tr>
+</table>
+<hr>
+<table>
+    <tr>
+        <td>Всего</td>
+        <td class="rightcol"><strong>1330 Р</strong></td>
+    </tr>
+</table>
+<button><a href="#">Order cancellation</a></button>
 </body>
 </html>
